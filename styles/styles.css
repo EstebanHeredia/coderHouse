@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
+
+body {
+  background: linear-gradient(270deg, #7c0e70, #5d0593, #380593);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+
+* {
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  height: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  color: #fff;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #6a03af;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 100px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: #000000;
+  position: sticky;
+  width: 100%;
+  color: #fff;
+}
+
+.logo {
+  cursor: pointer;
+  padding: 0px 100px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "perfume1 perfume2"
+    "perfume3 perfume4";
+}
+
+.img1 {
+  grid-area: perfume1;
+  width: 250px;
+  height: 250px;
+}
+
+.img2 {
+  grid-area: perfume2;
+  width: 250px;
+  height: 250px;
+}
+
+.img3 {
+  grid-area: perfume3;
+  width: 250px;
+  height: 250px;
+}
+
+.img4 {
+  grid-area: perfume4;
+  width: 150px;
+  height: 250px;
+}
+
+.legend1 {
+  grid-area: perfume1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.legend2 {
+  grid-area: perfume2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.legend3 {
+  grid-area: perfume3;
+  display: flex;
+  justify-content: space-around;
+}
+
+.legend4 {
+  grid-area: perfume4;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  color: #03090c !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #ac31ac;
+  transition: all 1s ease;
+  position: relative;
+}
+.button:hover {
+  background: #ac31ac;
+  color: #fff !important;
+}
+
+.cbuttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.container_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container_text span {
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+}
+
+.text1 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  animation-duration: 3s;
+  animation-name: text;
+  animation-iteration-count: 1;
+}
+
+.text2 {
+  font-size: 40px;
+}
+
+@keyframes text {
+  0% {
+    color: #000000;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: #000000;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.body {
+  background: rgb(20, 19, 19);
+}
+
+.block {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    margin: 10% auto 0;
+    background: url("https://cdn.forbes.co/2019/12/Sin-título2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .glow::before,
+  .glow::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      -45deg,
+      #00ff66,
+      #00ffff,
+      #ff00ff,
+      #ff0099,
+      #099fff
+    );
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 40s linear infinite;
+  }
+  
+  @keyframes change{
+     0%{
+        background-position: 0 0;
+     }
+     50%{
+        background-position: 400% 0;
+     }
+     100%{
+        background-position: 0 0;
+     }
+  }
+  
+  .glow::after{
+     filter: blur(40px);
+     opacity: .5;
+  }
+  

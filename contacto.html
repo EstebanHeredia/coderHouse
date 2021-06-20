@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>La perfumería</title>
+  </head>
+  <body>
+    <header class="menu">
+      <img class="logo" src="img/logo.JPG" alt="" />
+      <nav class="nav">
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="compañia.html">Nuestra compañía</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="texto" action="">
+      <fieldset>
+        <legend class="texto">Contactenos</legend>
+        Ingrese su nombre:
+        <input class="textbox" type="text" placeholder="Nombre" />
+        <br />
+        <br />
+        Ingrese su apellido:
+        <input class="textbox" type="text" placeholder="Apellido" />
+        <br />
+        <br />
+        Numero de contacto:
+        <input class="textbox" type="text" placeholder="Numero telefonico" />
+        <p>Seleccione su sexo:</p>
+        M<input type="radio" name="sexoUsuario" /> F<input
+          type="radio"
+          name="sexoUsuario"
+        />
+        <fieldset>
+          <legend>Perfumes</legend>
+          <select name="Perfumes">
+            <option class="texto" value="empty"></option>
+            <option class="texto" value="pacoRabanneInvictus">
+              Paco Rabanne Invictus
+            </option>
+            <option class="texto" value="pacoRabanneXS">Paco Rabanne XS</option>
+            <option class="texto" value="oneMillion">One million</option>
+            |
+          </select>
+        </fieldset>
+        <br />
+        <br />
+        <div class = "cbuttons">
+          <input class="button" type="submit" value="Enviar consulta" />
+          <input class="button" type="reset" value="Borrar textos" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
