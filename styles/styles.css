@@ -246,50 +246,46 @@ h1 {
 }
 
 .block {
-    position: relative;
-    width: 50%;
-    height: 400px;
-    margin: 10% auto 0;
-    background: url("https://cdn.forbes.co/2019/12/Sin-título2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  width: 50%;
+  height: 400px;
+  margin: 10% auto 0;
+}
+
+.glow::before,
+.glow::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    -45deg,
+    #00ff66,
+    #00ffff,
+    #ff00ff,
+    #ff0099,
+    #099fff
+  );
+  background-size: 400%;
+  height: calc(100% + 5px);
+  width: calc(100% + 5px);
+  z-index: -1;
+  animation: change 40s linear infinite;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 0;
   }
-  
-  .glow::before,
-  .glow::after {
-    content: "";
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(
-      -45deg,
-      #00ff66,
-      #00ffff,
-      #ff00ff,
-      #ff0099,
-      #099fff
-    );
-    background-size: 400%;
-    height: calc(100% + 5px);
-    width: calc(100% + 5px);
-    z-index: -1;
-    animation: change 40s linear infinite;
+  50% {
+    background-position: 400% 0;
   }
-  
-  @keyframes change{
-     0%{
-        background-position: 0 0;
-     }
-     50%{
-        background-position: 400% 0;
-     }
-     100%{
-        background-position: 0 0;
-     }
+  100% {
+    background-position: 0 0;
   }
-  
-  .glow::after{
-     filter: blur(40px);
-     opacity: .5;
-  }
-  
+}
+
+.glow::after {
+  filter: blur(40px);
+  opacity: 0.5;
+}
