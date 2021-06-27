@@ -26,44 +26,52 @@
         </ul>
       </nav>
     </header>
-
-    <form class="texto" action="">
-      <fieldset>
-        <legend class="texto">Contactenos</legend>
-        Ingrese su nombre:
-        <input class="textbox" type="text" placeholder="Nombre" />
+    <h3 class="text-center mt-3">
+      Tu opinión es
+      <small class="text-white">muy importante para nosotros</small>
+    </h3>
+    <form class="border text-center d-flex flex-column bd-highlight mb-3">
+      <div class="p-2 bd-highlight text-white">
+        <label for="inputName">Nombres</label>
         <br />
-        <br />
-        Ingrese su apellido:
-        <input class="textbox" type="text" placeholder="Apellido" />
-        <br />
-        <br />
-        Numero de contacto:
-        <input class="textbox" type="text" placeholder="Numero telefonico" />
-        <p>Seleccione su sexo:</p>
-        M<input type="radio" name="sexoUsuario" /> F<input
-          type="radio"
-          name="sexoUsuario"
+        <input
+          type="name"
+          class="justify-content-center"
+          id="inputName"
+          placeholder="Nombres"
         />
-        <fieldset>
-          <legend>Perfumes</legend>
-          <select name="Perfumes">
-            <option class="texto" value="empty"></option>
-            <option class="texto" value="pacoRabanneInvictus">
-              Paco Rabanne Invictus
-            </option>
-            <option class="texto" value="pacoRabanneXS">Paco Rabanne XS</option>
-            <option class="texto" value="oneMillion">One million</option>
-            |
-          </select>
-        </fieldset>
+      </div>
+      <div class="p-2 bd-highlight text-white">
+        <label for="inputLastName ">Apellidos</label>
         <br />
+        <input
+          type="text"
+          class="justify-content-center"
+          id="inputLastName"
+          placeholder="Apellidos"
+        />
+      </div>
+      <div class="p-2 bd-highlight text-white">
+        <label for="inputPhone ">Telefono</label>
         <br />
-        <div class="cbuttons">
-          <input class="button" type="submit" value="Enviar consulta" />
-          <input class="button" type="reset" value="Borrar textos" />
-        </div>
-      </fieldset>
+        <input
+          type="text"
+          class="justify-content-center"
+          id="inputPhone"
+          placeholder="Telefono"
+        />
+      </div>
+      <div class="p-2 bd-highlight text-white">
+        <label for="inputMail">E-mail</label>
+        <br />
+        <input
+          type="email"
+          class="justify-content-center"
+          id="inputMail"
+          placeholder="Correo electronico"
+        />
+      </div>
+      <button type="submit" class="btn btn-danger">Sign in</button>
     </form>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
